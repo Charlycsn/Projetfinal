@@ -1,17 +1,25 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    
 }
 
 .navbar{
     display: flex;
     align-items: center;
     padding: 20px;
+    z-index: 1;
 }
 nav{
     flex: 1;
     text-align: right;
+    z-index: 2;
 }
 .icon{
     width: 15px;
@@ -33,6 +41,7 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+
 a{
     text-decoration: none;
     color: #373737;
@@ -58,6 +67,7 @@ p{
     height: auto;
     background-size: 100% 50%;
     justify-content: space-between;
+    position: relative;
    
 }
 .row{
@@ -200,6 +210,7 @@ span{
     width: 70%;
 }
 
+
 .col-4{
     flex-basis: 25%;
     padding: 10px;
@@ -244,10 +255,11 @@ h4{
     transform: translateY(-5px);
 }
 
-.offer{
+.engagement{
     background: #F6F6F6;
-    margin-top: 80px;
+    margin-top: 110px;
     padding: 30px 0;
+    margin-bottom: 110px;
 
 }
 
@@ -267,6 +279,7 @@ h4{
     line-height: 60px;
     margin: 25px 0;
 }
+
 
 /* CECI N'A PAS MARCHÉ POUR LES BOUTONS
 
@@ -291,7 +304,7 @@ h4{
     display: inline-block;
     background: #e2e2e2;
     color: #373737;
-    padding: 8px 20px;
+    padding: 8px 25px;
     margin: 30px 0;
     border-radius: 30px;
     font-family: Nunito Regular, sans-serif;
@@ -301,15 +314,205 @@ h4{
     display: inline-block;
     background: #FF7070;
     color: #F6F6F6;
-    padding: 8px 20px;
+    padding: 8px 25px;
     margin: 30px 0;
     border-radius: 30px;
     font-family: Nunito Regular, sans-serif;
 }
 
 
+.block img{
+    block-size: 150px;
+    writing-mode: horizontal-tb;
+}
+
+.text-2{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: nunito regular, sans-serif;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    color: #FFFF;
+    width: 70%;
+}
+
+.col-2 a{
+    font-family: Nunito Regular, sans-serif;
+    font-size: 12px;
+    color: #F6F6F6;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.col-2 h4{
+    color: #FFFF;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1{
+    justify-content: left;
+}
+
+.left-part{
+    font-family: Nunito Regular, sans-serif;
+    font-size: 12px;
+    color: #F6F6F6;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.left-part h4{
+    margin-bottom: 20px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    background-size: 100% 50%;
+
+    
+}
+
+.background img{
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    height: 1000px;
+    top: 210em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-2{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    top: 30px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.footer{
+    background: #F6F6F6;
+    font-family: Nunito Regular, sans-serif;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+}
+
+.footer-col, .footer-col-2, .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col{
+    flex-basis: 30%;
+
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-3 img{
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    flex-basis: 12%;
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.app-logo img{
+    width: 30px;
+    height: auto;
+    margin-bottom: 60px;
+    flex-basis: 12%;
+    justify-content: space-between;
+}
+
+/***********RESPONSIVE***********/
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/************Media query menu**************/
 
 
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #373737;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #F6F6F6;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/************Media query moins de 600**************/
+
+@media only screen and (max-width: 800px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-4, .col-4 img, .col-5{
+        flex-basis: 100%;
+    }
+}
 
 
 

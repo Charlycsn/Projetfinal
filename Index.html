@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>La Bonne Graine</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,10 +13,10 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/Logo_LaBonneGraine.png" width="125px">
+                    <img src="images/Logo_LaBonneGraine.png" width="170">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="#">GRAINES</a></li>
                         <li><a href="#">POMMES DE TERRE</a></li>
                         <li><a href="#">BULBES POTAGERS</a></li>
@@ -30,7 +31,7 @@
                         <li><a href=""><img class="icon" src="images/fi-rr-search.svg" alt="iconsearch"></a></li>
                     </ul>
                 </nav>
-        
+                <img src="images/fi-rr-menu-burger.svg" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-5">
@@ -55,12 +56,9 @@
             </div>
         </div>
     </div>
-    
-    
-<!-----------CATÉGORIES---------->
 
 
-<!-----------PRODUIIT---------->
+<!-----------PRODUITS---------->
 
     <div class="small-container">
         <h2 class="title">Nos produits de saison</h2>
@@ -185,6 +183,8 @@
     </div>
 
 <!------------QUI SOMMES NOUS------------>    
+
+
     <div class="offer">
         <div class="small-container">
             <div class="row">
@@ -203,6 +203,132 @@
             </div>
         </div>
     </div>
+
+<!---------NOS ENGAGEMENTS--------->   
+
+    <div class="engagement">
+        <div class="smallcontainer">
+            <h2 class="title">Nos Engagements</h2>
+            <div class="row">
+                <img class="banner-2" src="images/lawrence-kayku-ZVKr8wADhpc-unsplash.jpg" alt="banner">
+                <div class="background">
+                    <img src="images/background-block.png" alt="bacgroundcolor">
+                    <!--Je n'ai pas réussi à mettre le texte sur la forme "background" (carré bleu)-->
+                    <div class="column-1">
+                        <div class="right-part">
+                            <h4>Une Transparence</h4>
+                            <a>Nous mettons tout en œuvre pour vous permettre de faire votre choix en conscience, en fonction des critères propres à chacun.</a>
+                        </div>
+                        
+                        <div class="right-part">
+                            <h4>Une Authenticité</h4>
+                            <a>Passionnés par les produits que nous commercialisons, mais aussi soucieux de proposer des produits sains, nous privilégions des articles bio ou, a minima, non traités.</a>
+                        </div>
+       
+                        <div class="right-part">
+                            <h4>Un partage</h4>
+                            <a>En tant que jardiniers, nous nous mettons toujours à la place de nos clients. Nous testons pour vous les futures introduction au catalogue via notre Jardin d'Essai. </a>
+                        </div>
+                        <div class="column-2">
+                            <div class="left-part">
+                                <h4>Une Diversité</h4>
+                                <a>Nous avons la volonté de vous proposer une gamme complète et attractive, que vous recherchiez des variétés anciennes ou modernes. </a>
+                            </div>
+                            <div class="left-part">
+                                <h4>Des prix justes</h4>
+                                <a>En proposant plusieurs conditionnements pour chaque variété, vous pourrez choisir la quantité de graines adaptée à la taille de votre jardin.</a>
+                            </div>
+                            <div class="left-part">
+                                <h4>Une qualité Germanine</h4>
+                                <a>Toutes nos graines sont testées régulièrement afin de vous offrir la meilleure réussite lors de vos semis. 
+                                Des graines de qualité professionnelle à destination de tous, voici notre volonté.</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Une question ?</h3>
+                        <p>Nous sommes à votre disposition</p>
+                        <a href="#" class="btn2">Contactez-nous</a>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>La Bonne Graine</h3>
+                        <label for="email">Inscrivez-vous à la Newsletter</label>
+                        <input id="emailAddress" type="email" placeholder="user@example.fr"
+                        list="defaultEmails" size="64" maxlength="256" multiple>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Certificat BIO</h3>
+                        <p class="underline">Télécharger le certificat</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Pour mieux comprendre</h3>
+                        <ul>
+                            <li>Bio non traité</li>
+                            <li>Hybrides/OGM</li>
+                            <li>Qui sommes nous ?</li>
+                            <li>Nos engagements</li>
+                            <li>Espace presse</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Plus d'infos</h3>
+                        <ul>
+                            <li>Livraisons et retours</li>
+                            <li>paiment sécurisé</li>
+                            <li>Mentions légales</li>
+                            <li>Conditions générales de ventes</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>La Bonne Graine vous recommande</h3>
+                        <p>
+                            <img src="images/logo-jc-vertical.png" alt="logo">
+                            <img src="images/logo_noir.png" alt="logo">
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="app-logo">
+                <h3>REJOIGNEZ-NOUS</h3>
+                <img src="images/Niconfinder_46-facebook_104458.png" alt="fb">
+                <img src="images/Niconfinder_BW_Pinterest_glyph_svg_5305160 copie.png" alt="pinterest">
+                <img src="images/Niconfinder_BW_Twitter_2_glyph_svg_5305173.png" alt="twitter">
+                <img src="images/Niconfinder_Circled_Instagram_svg_5279112.png" alt="instagram">
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight = "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
 
@@ -236,7 +362,20 @@
             </div>
 
         </div>
-    </div>-->
+    </div>
+
+
+
+                <div class="text">
+                    <h1>Laissez vous guider par notre calendrier des saisons</h1>
+                </div>
+                <div class="block">
+                    <img src="images/background-block.png">
+                </div>
+                    <div class="background">
+                        <img src="images/lawrence-kayku-ZVKr8wADhpc-unsplash.jpg">
+                    </div>
+-->
    
 
 
